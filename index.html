@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/mail_send.js"></script>
+
+    <!-- Надо убрать все что ниже! -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- Надо убрать все что выше! -->
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="styles/style_slider.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/for_up.css">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/style_for_z.css">
+    <link rel="stylesheet" href="styles/style-slick.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <title>Сайт-визитка</title>
+</head>
+<body>
+
+
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="mmm">
+            <div class="main-menu">
+                <ul class="menu-ul">
+                    <li class="logo"><a href="http://cypcommunity.com/">Сайт-визитка</a></li>
+                    <li class="menu-li"><a href="#oour_tteam"><i class="fa fa-clipboard"></i>О НАС</a></li>
+                    <li class="menu-li"><a href="#pportfolio"><i class="fa fa-image"></i>ПОРТФОЛИО</a></li>
+                    <li class="menu-li"><a href="#sservices"><i class="fa fa-cogs"></i>УСЛУГИ</a></li>
+                    <li class="menu-li"><a href="magazine.html"><i class="fa fa-shopping-cart"></i>МАГАЗИН</a></li>
+                    <li class="menu-li"><a href="calculators-page.html"><i class="fa fa-users"></i>РАСЧЕТ СТОИМОСТИ</a></li>
+                    <li class="menu-li"><a href="#ccontacts"><i class="fa fa-address-book"></i>КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        <h1 class="hofsite">Добро пожаловать!</h1>
+
+        <form action="#">
+            <button class="order_service_1"><i class="fa fa-bullhorn"></i>Заказать услугу</button>
+        </form>
+
+        <!--Контакты справа от "Заказать услугу"-->
+
+        <div class="contacts-near">
+            <div class="text-near">
+                <p> </p>
+            </div>
+            <div class="ivan-contacts-near">
+                amp-img src="img/phone.svg" alt="" >
+                <a href="#"><b>+38 (099)-45-92-187</b></a>
+            </div>
+            <div class="ivan-contacts-near">
+                amp-img src="img/email.svg" alt="" >
+                <a href="#"><b>startuper.ivan@gmail.com</b></a>
+            </div>
+            <div class="ivan-contacts-near">
+                amp-img src="img/telegram.svg" alt="" >
+                <a href="#"><b>@programmer_web</b></a>
+            </div>
+            <div class="ivan-contacts-near">
+                amp-img src="img/discord.svg" alt="" >
+                <a href="#"><b>Stolek#8481</b></a>
+            </div>
+        </div>
+
+    </header>
+    
+
+    <!-- Вспылывающее окно для 'Заказать услугу' -->
+    <form id="form_mail">
+    <div class="modal-back">
+        <div class="modal-content">
+            <div class="accept">
+                <h3>amp-img src="img/email.svg" alt="">ВЫ ГОТОВЫ СДЕЛАТЬ ЗАКАЗ?</h3>
+            </div>
+
+            <div class="user-info">
+                <div class="user-information">
+                    <div class="name-user">
+                        <label for="fname">Как к Вам обращаться? <span> *</span></label>
+                        <div class="user-name-input">
+                            <input type="text" name="fname" id="user_name">
+                        </div>
+                    </div>
+                    <div class="email-user">
+                        <label for="email">Ваш e-mail <span> *</span></label>
+                        <div class="email-name-input">
+                            <input type="text" name="email" id="user_email">
+                        </div>
+                    </div>
+                </div>
+                <div class="user-information">
+                    <div class="phone-user">
+                        <label for="phone">Контактный телефон <span> *</span></label>
+                        <div class="phone-name-input">
+                            <input type="text" name="phone" id="user_phone">
+                        </div>
+                    </div>
+                    <div class="task-user">
+                        <label for="task">Выберите услугу<span> *</span></label>
+                        <div class="task-name-select">
+                            <select name="task" id="task">
+                                <option value="1">Выберите...</option>
+                                <option value="2">HTML вёрстка</option>
+                                <option value="3">Сайт визитка</option>
+                                <option value="4">Интернет-магазин</option>
+                                <option value="5">Сайт-каталог</option>
+                                <option value="6">Корпоративный сайт</option>
+                                <option value="7">Индивидуалный проект</option>
+                                <option value="8">Landing page</option>
+                                <option value="9">Наполнение сайта</option>
+                                <option value="10">Email расслыка</option>
+                                <option value="11">Оптимизация сайта</option>
+                                <option value="12">Поддержка сайта</option>
+                                <option value="13">Другое (указать в описании)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chose">
+                    <div class="chose-this-one">
+                        <div class="chose-fast">
+                            <label for="fast-notfast" class="label-first">Способ связи<span>*</span></label>
+                            <div class="fast-or-not-fast" id="divchik">
+                                <input type="radio" name="fast-notfast" id="notfast-fast">
+                                <label for="notfast-fast">Telegram</label>
+                                <input type="radio" name="fast-notfast" id="notfast-fast-b">
+                                <label for="notfast-fast-b">Телефон</label>
+                                <input type="radio" name="fast-notfast" id="notfast-fast-c">
+                                <label for="notfast-fast-c">Другое</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chose-this-two">
+                        <div class="chose-tz">
+                            <label for="yes-no" class="label-chose">Есть ли у вас техническое задание? 
+                                <span>*</span></label>
+                                <div class="yes-or-no" id="yeah_no">
+                                    <input type="radio" name="yes-have" id="yes-have">
+                                    <label for="yes-have">Да</label>
+                                    <input type="radio" name="yes-have" id="no-have">
+                                    <label for="no-have">Нет</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-write">
+                        <label for="text-user">Описание проекта, ТЗ, сайты конкурентов, понравившиеся сайты, бюджет.
+                         <span>*</span></label>
+                         <textarea name="text-user" id="text-user" cols="80" rows="5"></textarea>
+                     </div>
+
+                 </div>
+
+
+
+                 <button type="button" name="button" id="sendMail">Отправить</button>
+
+                <div class="close-icon">
+                    <i class="close">&times;</i>
+                </div>
+            </div>
+        </div>
+    </form>
+
+        <!--Контакты в правом нижнем углу-->
+        <div class="block-info-ivan">
+            <div class="information-ivan">
+                <div class="ivan-info-fi">
+                    <b>+38(099)4592187</b>
+                </div>
+                <div class="ivan-info-se">
+                    <b>freevan04@gmail.com</b>
+                </div>
+                <div class="ivan-info-th">
+                    <b>@programmer_web</b>
+                </div>
+                <div class="ivan-info-fo">
+                    <b>Stolek#8481</b>
+                </div>
+            </div>
+            <div class="contacts-bottom-right">
+                <div name="phone-ivan" class="ivan-phone">
+                    amp-img src="img/phone.svg" alt="" onmouseover="showPhone()" onmouseleave="showPhoneNo()">
+                </div>
+                <div class="ivan-email">
+                 amp-img src="img/email.svg" alt="" onmouseover="showEmail()" onmouseleave="showEmailNo()">
+             </div>
+             <div class="ivan-telega">
+                 amp-img src="img/telegram.svg" alt="" onmouseover="showTelega()" onmouseleave="showTelegaNo()">
+             </div>
+             <div class="ivan-discord">
+                 amp-img src="img/discord.svg" alt="" onmouseover="showDiscord()" onmouseleave="showDiscordNo()">
+             </div>
+         </div>
+     </div>
+
+     <!-- Кнопка прокрутки вверх -->
+     <a id="button-up"></a>
+
+     <!-- Конец шапки сайта-->
+
+     <!-- Раздел НАШИ УСЛУГИ -->
+     <div class="main_our_services">
+        <a name="sservices"></a>
+        <h1 class="our_services"><i class="fa fa-check-circle" width="100" height="100"></i>НАШИ УСЛУГИ</h1>
+
+        <div class="our_services_spisok">
+
+            <div class="first_column">
+
+                <div class="our_services_verstka">
+                    <h3>ВЕРСТКА</h3>
+                    <p>Верстаем хорошие и качественные сайты по графическим макетам с использованием HTML5 и CSS3 + Boostrap.</p>
+                </div>
+
+                <div class="our_services_onlinestore">
+                    <h3>РАЗРАБОТКА ИНТЕРНЕТ МАГАЗИНА</h3>
+                    <p>Разрабатываем интернет магазин с 0, импортируем нужные товары. Разработка осуществляется на популярных CMS, таких как WordPress, Joomla и другие.</p>           
+                </div>
+
+                <div class="our_services_designinglogotype">
+                    <h3>РАЗРАБОТКА ЛОГОТИПА</h3>
+                    <p>Разработаем логотип для Вашей компании. Логотип для сайта, визитки и баннеров.</p>
+                </div>
+
+                <div class="our_services_optimization">
+                    <h3>ОПТИМИЗАЦИЯ КОДА</h3>
+                    <p>Уменьшим размер вашего кода, повысим читабельность кода и уберем все ненужное для повышения скорости загрузки сайта.</p>
+                </div>
+
+            </div>
+
+            <div class="second_column">
+
+                <div class="our_services_dorabotka">
+                    <h3>ДОРАБОТКА САЙТА</h3>
+                    <p>Доработаем Ваш сайт, обновим плагины, допишем необходимый код, подключем более новые библиотеки.</p>
+                </div>
+
+                <div class="our_services_excort">
+                    <h3>СОПРОВОЖДЕНИЕ САЙТОВ</h3>
+                    <p>Сопроводим Ваш сайт, исправим проблемы с хостингом, защитим сайт от взломов и излечим от вирусов.</p>
+                </div>
+
+                <div class="our_services_fillingsite">
+                    <h3>НАПОЛНЕНИЕ САЙТА</h3>
+                    <p>Наполним Ваш сайт качественным текстом, картинками. Расположим текст красиво и приятно для глаза.</p>
+                </div>
+
+                <div class="our_services_domen">
+                    <h3>ДОМЕН И ХОСТИНГ</h3>
+                    <p>Зарегистрируем домен и хостинг для Вашего сайта, поставим Ваш сайт на хостинг и на домен, прокансультируем по данному поводу.</p>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="third_column">
+
+                <div class="our_services_natazhka">
+                    <h3>САЙТ НА WORDPRESS</h3>
+                    <p>Посадим Ваш сайт на CMS WordPress, настроим плагины, посадим каждую страницу, расскажем как работать с WordPress.</p>
+                </div>
+
+                <div class="our_services_sitesnull">
+                    <h3>РАЗРАБОТКА САЙТА</h3>
+                    <p>Разработаем для Вас сайт с нуля. Сделаем макет, сверстаем сайт, наполним его текстом и картинками, посадим на CMS, настроим SEO, поставим на хостинг и домен, разработаем анимации и preloader.</p>
+                </div>
+
+                <div class="our_services_seo">
+                    <h3>SEO</h3>
+                    <p>Настроим SEO для Вашего сайта, для продвижения сайта выше в поисковой системе.</p>
+                </div>
+
+
+
+                <div class="our_services_scripts">
+                    <h3>СКРИПТЫ И АНИМАЦИИ</h3>
+                    <p>Разработаем для Вас скрипты на php, уникальные анимации на javascript для более приятного восприятия Вашего сайта.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Раздел "Преимущества" -->
+
+    <div class="advantages">
+
+        <h1 class="advantages_advantages"><i class="fa fa-user"></i>ПРЕИМУЩЕСТВА</h1>
+
+        <div class="advantages_spisok">
+
+            <div class="advantages_first_column">
+
+                <div class="advantages_adequate_price">
+                    <h3><i class="fa fa-credit-card"></i>ЦЕНЫ</h3>
+                    <p>Актуальные цены за качественную и современную работу.</p>
+                </div>
+
+                <div class="advantages_cleancode">
+                    <h3><i class="fa fa-code"></i>ЧИСТЫЙ И ОПТИМИЗИРОВАННЫЙ КОД</h3>
+                    <p>Код сайта оптимизирован, закоментирован и понятен.</p>
+                </div>
+            </div>
+
+            <div class="advantages_second_column">
+
+                <div class="advantages_lasttechnologies">
+                    <h3><i class="fa fa-globe"></i>ТЕХНОЛОГИИ</h3>
+                    <p>Не сомневайтесь при разработке Вашего сайта будут использоваться новейшие технологии из мира IT, версии всех библиотек и скриптов будут самыми актуальными.</p>
+                </div>
+
+                <div class="advantages_garantee">
+                    <h3><i class="fa fa-tag"></i>ГАРАНТИЯ</h3>
+                    <p>После создания сайта действует гарантия – 1 месяц. В течении этого месяца мы будем исправлять любые неполадки связанные с Вашим сайтом.</p>
+                </div>
+
+            </div>
+
+            <div class="advantages_third_column">
+
+                <div class="advantages_timings">
+                    <h3><i class="fa fa-sitemap"></i>ОБЩЕНИЕ</h3>
+                    <p>Вы сможете пообщаться с каждым членом команды отдельно, узнать что это за специалист и человек в общем. Основные переговоры с Вами будет вести менеджер, вы сможете наблюдать весь прогресс создания Вашего проекта.</p>
+                </div>
+
+                <div class="advantages_communication">
+                    <h3><i class="fa fa-percent"></i>БОНУСЫ И СКИДКИ</h3>
+                    <p>Для наших постоянных клиентов мы регулярно даем бонусы и скидки.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Раздел "Наша комманда" -->
+    <div class="my_command">
+        <a name="oour_tteam"></a>
+        <h1><i class="fa fa-user-circle"></i>НАША КОМАНДА</h1>
+
+        <div class="my_command_spisok">
+
+            <div class="my_command_first_column">
+
+                <div class="ivan_gubar">
+
+                    amp-img src="img/avatar.png">
+                    <h3>Иван Губарь</h3>
+                    <p>Менеджер, программист</p>
+
+                </div>
+
+                <div class="kuno_bogdan">
+                    amp-img src="img/avatar.png">
+                    <h3>Богдан Куно</h3>
+                    <p>Занимается Photoshop.</p>
+                </div>
+
+            </div>
+
+            <div class="my_command_second_column">
+
+                <div class="vladislav_kolmagorov">
+                    amp-img src="img/avatar.png">
+                    <h3>Владислав Колмагоров</h3>
+                    <p>Занимается программированием</p>
+
+                </div>
+
+                <div class="R4">
+                    amp-img src="img/avatar.png">
+                    <h3>R4</h3>
+                    <p>Занимается программированием</p>
+                </div>
+
+            </div>
+
+            <div class="my_command_third_column">
+
+                <div class="dmitriy_dolgiy">
+
+                    amp-img src="img/avatar.png">
+                    <h3>Дмитрий Долгий</h3>
+                    <p>Занимается программированием.</p>
+
+                </div>
+
+                <div class="sasha">
+                    amp-img src="img/avatar.png">
+                    <h4>Александр</h4>
+                    <p>Тех. Администратор</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Раздел "Резюме" -->
+    <div class="resume">
+        <a name="resumme"></a>
+        <h1 class="resume_resume">РЕЗЮМЕ</h1>
+
+        <div class="resume_text">
+            <p>Работа: Веб-разработчик, менеджер</p>
+            <p>Ф.И.О.: Губарь Иван Дмитриевич</p>
+            <p>Занимаюсь: Версткой сайтов, разработкой сайтов, запуском стартапов, руководством проектов, разработкой скриптов</p>
+            <p>Личные качества: </p>
+            <p>Контакты: </p>
+        </div>
+
+    </div>
+
+    <!-- Раздел портфолио -->
+    <div class="portfolio">
+        <h3>Наши последние работы</h3>
+        <div class="slider">
+            <div class="slider__item filter">
+                amp-img src="img/viking-preview.png" alt="">
+            </div>
+            <div class="slider__item">
+                amp-img src="img/viking-preview.png" alt="">
+            </div>
+            <div class="slider__item filter">
+                amp-img src="img/viking-preview.png" alt="">
+            </div>
+            <div class="slider__item filter">
+                amp-img src="img/viking-preview.png" alt="">
+            </div>
+            <div class="slider__item filter">
+                amp-img src="img/viking-preview.png" alt="">
+            </div>
+        </div>
+
+        <div class="portolio-button">
+            <button class="full_portfolio_is">Полное портфолио</button>
+        </div>
+        <!-- Конец раздела портфолио -->
+
+        <!-- Раздел "Как попасть к нам в команду" -->
+        <div class="how_to_join_us">
+
+            <h1><i class="fa fa-user-plus"></i>КАК ПОПАСТЬ К НАМ В КОМАНДУ</h1>
+            <p>Для того чтобы попасть к нам в команду Вам нужно...</p>
+            <form action="#">
+                <button class="fill-application"><i class="fa fa-address-book"></i>Заполнить заявку</button>
+            </form>
+        </div>
+
+        <!-- Раздел "Доп. информация" -->
+        <div class="additional_info">
+         <h1><i class="fa fa-info-circle"></i>ДОП. ИНФОРМАЦИЯ</h1>
+
+         <div class="additional_info_spisok">
+            <a href="#"><i class="fa fa-check"></i>Виды веб сайтов</a><br>
+            <a href="main_etaps_of_work.html"><i class="fa fa-check"></i>Основные этапы разработки сайтов</a><br>
+            <a href="#"><i class="fa fa-check"></i>Оплата работы</a><br>
+            <a href="#"><i class="fa fa-check"></i>С чем мы умеем работать ?</a><br>
+            <a href="#"><i class="fa fa-check"></i>Самые часто задаваемые вопросы (FAQ)</a><br>  
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Раздел "Контакты" -->
+<div class="contacts">
+    <a name="ccontacts"></a>
+    <div class="contacts_spisok" style="text-align: center;">
+
+        <div class="contacts_first_column">
+            <h3>Пн-Сб</h3>
+            <p>8:00 - 23:00</p>
+        </div>
+
+        <div class="contacts_second_column">
+            <h3>Телефон</h3>
+            <p>+380994592187</p>
+        </div>
+
+        <div class="contacts_third_column">
+            <h3>Почта</h3>
+            <p>startuper.ivan@gmail.com</p>
+            
+        </div>
+
+        <div class="contacts_fourth_column">
+            <h3>Discord</h3>
+            <p>Stolek#8481</p>
+        </div>
+
+        <div class="contacts_fifth_column">
+            <h3>Telegram</h3>
+            <p></p>
+        </div>
+        
+    </div>
+
+</div>
+
+<!-- Раздел "Соц.сети" -->
+<div class="soc">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-vk"></i></a>
+    <a href="#"><i class="fa fa-telegram"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+
+<footer>
+ <div class="c2020">
+     <h4>© 2020. Фрилансер, Веб-программист. Все права защищены.</h4>
+ </div>
+</footer>
+
+<script type="text/javascript" src="scripts/script.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<!--<script type="text/javascript" src="scripts/yakor.js"></script>-->
+
+<script type="text/javascript" src="scripts/script_for_z.js"></script>
+
+<script type="text/javascript" src="scripts/contacts.js"></script>
+<!-- Подключаем jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Подключаем слайдер Slick -->
+<script src="scripts/slick.min.js"></script>
+<!-- Подключаем файл скриптов -->
+<script src="scripts/script-slick.js"></script>
+
+<script src="scripts/mail_send.js"></script>
+</body>
+</html>
